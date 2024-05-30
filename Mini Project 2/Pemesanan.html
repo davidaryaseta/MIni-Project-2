@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Pemesanan.css">
+    <title>KUTIKET.ID</title>
+</head>
+
+<body>
+  <header>
+    <div class="Navigation">
+        <div id="Kiri">
+            <img src="image/logo2.jpg" 
+            alt="Yah Ilang">
+        <h1>Kutiket</h1>
+        </div>
+        <div id="Kanan">
+            <ul>
+                <a href="Utama.html">Home</a>
+                <a href="#">Berita</a>
+                <a href="#">About</a>
+            </ul>
+        </div>
+    </div>
+    </header>
+
+    <h2>Detail Pembelian</h2></section>
+    
+    <main>
+        <div class="breadcrumbs">
+            <a href="Utama.html">Utama</a>
+            <a></a>
+            <a href="Detail.html">Detail</a>
+            <a></a>
+            <a href="Pemesanan.html">Pemesanan</a>
+        </div>
+        <section class="data-atas">
+            <div class="gender" >
+                <input type="radio" name="gender1"  value="Pria" > Pria
+                <input type="radio" name="gender1"  value="Wanita" > Wanita
+            </div>
+            <div class="Nama">
+                <p class="namamu">Nama Lengkap <span>*</span></p>
+                <p id="namamu1">Gunakan nama sesuai KTP / Paspor</p>
+                <input type="text" id="nama1" placeholder="Your Name " required/>
+            </div>
+            <div class="Nomer">
+                <p class="nomermu">No Whatsapp <span>*</span></p>
+                <input type="text" id="nomor-hp" placeholder="Masukkan Nomor HP" maxlength="13" required> 
+            </div>
+            <div class="Email">
+                <p class="emailmu">Email <span>*</span></p>
+                <input type="text" id="email1" placeholder="Insert Email Address" required  />
+            </div>
+            <div class="jumlahtiket">
+                <p class="tiketmu">Jumlah Tiket</p>
+                <input type="number" id="jumlah_tiket" name="jumlah_tiket" min="1" max="4" value="1" onchange="hitungHarga()">
+            </div>
+        </section>
+        
+        <section class="bagankanan">
+            <div class="fotokanan">
+                <img src="image/Konser1.png" alt="avesevfold">
+            </div>
+            <div class="namakonser"><h4>Avenged<br>Sevenfold</h4></div>
+            <div class="kelastiket">CAT1 Seat</div>
+            <div class="kelas">
+                <img src="image/seat.png" alt="kelasnya">
+            </div>
+            <div class="refund">
+                <img src="image/refund.png" alt="tidakbisarefund">
+            </div>
+            <div class="tidakrefund">Tidak bisa Refund!</div>
+            <div class="tanggalberlaku">Berlaku ditanggal terpilih</div>
+            <div class="tanggal">
+                <img src="image/dates.png">
+            </div>
+        </section>
+        
+        <section class="baganbawah">
+            <label class="hargatiket">Harga Tiket</label>
+            <input type="number" id="harga_tiket" name="harga_tiket" disabled value="2600000">
+            <label class="totalharga">Total Harga</label>
+            <input type="number" id="total_harga" name="totalharga" disabled value="2600000">
+            <!-- <script>
+            function hitungHarga() {
+                var jumlahTiket = document.getElementById("jumlah_tiket").value;
+                var hargaTiket = document.getElementById("harga_tiket").value;
+                var totalHarga = jumlahTiket * hargaTiket;
+                
+                document.getElementById("total_harga").innerHTML = totalHarga;
+            }
+            hitungHarga(); // Menjalankan fungsi hitungHarga() saat halaman dimuat
+            </script>  -->
+            <div class="submit">
+                <a href="#">SUBMIT</a>
+            </div>
+        </section>
+        <section>
+            <div class="tombolkembali">
+                <a href="Detail.html"><img src="image/Back.png" alt=""></a>
+            </div>
+        </section>
+        
+        <div class="Sukses">
+            <p id="Berhasil">PEMESANAN BERHASIL!</p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Copyright 2024</p>
+    </footer>
+    
+</body>
+</html>
+
